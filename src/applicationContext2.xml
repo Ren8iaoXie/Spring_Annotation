@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--集合注入-->
+    <bean id="student" class="com.bean.Student">
+        <property name="age" value="28"></property>
+        <property name="name" value="谢昔日"></property>
+        <property name="list">
+            <list>
+                <value>劳斯莱斯</value>
+                <value>banz</value>
+                <value>奥迪</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>set1</value>
+                <value>set2</value>
+                <value>set3</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="100w" value="falali"></entry>
+                <entry key="200w" value="motolola"></entry>
+            </map>
+        </property>
+
+
+
+    </bean>
+</beans>

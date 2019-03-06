@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="student" class="com.bean.Student">
+        <property name="name" value="吴亦凡"/>
+        <property name="age" value="18"/>
+    </bean>-->
+
+    <!--命名空间p-->
+    <bean id="student" class="com.bean.Student" p:name="林志玲" p:age="18">
+
+    </bean>
+</beans>
